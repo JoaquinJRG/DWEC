@@ -13,9 +13,7 @@ let form = document.querySelector("form[name='search']");
 
 //The first input in that form.
 let firstInput = form.querySelector("input[type='text']");
-console.log(firstInput);
+
 
 //The last input in that form.
-
 let lastInput = form.querySelector("input[type='submit']");
-console.log(lastInput);

@@ -17,4 +17,4 @@ let apellidos = document.getElementById("apellidos");
 let lastSection = document.querySelector("section:last-of-type"); 
 
 //All the paragraphs   
-let paragraphs = document.querySelectorAll("p")
+let paragraphs = document.querySelectorAll("p");
