@@ -51,5 +51,16 @@ lastImg.id = "ultima_imagen";
 
 // Add a paragraph after the last element with a text counting the number of items in the list
 let countLi = document.getElementById("count-li"); 
-
 countLi.innerHTML = "Number of items: " + document.getElementsByTagName("li").length;
+
+//Add a paragraph, at the end of the document, containing how many classes has the last paragraph of the first article and their names
+let countClass = document.getElementById("count-classes");
+countClass.innerHTML = "Number of classes: " + document.querySelector("article p:last-of-type").classList.length; 
+
+//Add two classes to the previous paragraph: "clase1" and "clase2"
+document.querySelector("article p:last-of-type").classList.add("clase1", "clase2");
+
+//Remove the last created class
+document.querySelector("article p:last-of-type").classList.remove("clase2");
+
+//Add a boolean attribute to the first image
