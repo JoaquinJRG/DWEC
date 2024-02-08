@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css  ">
+</head>
+<body>
+
+    <section id="login-registrar">
+        <form id="registrar">
+            <h3>Registrar</h3>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <label>Edad:</label>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <label>Sexo:</label>
+            <select id="sexo">
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+            </select>
+            <labe>Idioma:</labe>
+            <select id="idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+            </select>
+            <label>Color:</label>
+            <select id="color">
+                <option value="azul">Azul</option>
+                <option value="rojo">Rojo</option>
+            </select>
+            <input type="submit" value="Registrar">
+        </form>
+
+        <form id="login">
+            <h3>Log in</h3>
+            <label>Nombre:</label>
+            <input type="text" id="login-nombre" placeholder="Nombre" required>
+            <button>Log in</button>
+        </form>
+    </section>
+
+    <section id="web">
+        <header>
+            <button id="log-out">Log out</button>
+            <button id="eliminar">Eliminar datos</button>
+        </header>
+        <main>
+        </main>
+        <form id="cambiar">
+            <h3>Cambiar datos</h3>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <label>Edad:</label>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <label>Sexo:</label>
+            <select id="sexo">
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+            </select>
+            <labe>Idioma:</labe>
+            <select id="idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+            </select>
+            <label>Color:</label>
+            <select id="color">
+                <option value="azul">Azul</option>
+                <option value="rojo">Rojo</option>
+            </select>
+            <input type="submit" value="cambiar">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
