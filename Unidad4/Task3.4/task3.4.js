@@ -1,8 +1,13 @@
 
+const opciones = {
+    enableHighAccuracy: true,
+    maximumAge: 30000,
+    timeout: 27000,
+};
 
 document.getElementById("geo").addEventListener("click", () => {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(muestraPosicion); 
+        navigator.geolocation.getCurrentPosition(muestraPosicion, muestraError, opciones);
     } else {
         alert("La geolocalización no está disponible.");
     }
@@ -10,10 +15,9 @@ document.getElementById("geo").addEventListener("click", () => {
 
 
 function muestraPosicion(posicion) {
-    let map = L.map('map').setView([posicion.coords.latitude, posicion.coords.longitude], 13);
+    console.log(posicion.coords.latitude, posicion.coords.longitude, posicion.coords.accuracy);
+}
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+function muestraError() {
+
 }
