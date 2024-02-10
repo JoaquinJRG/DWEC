@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <main></main>
+    <main>
+        <h1>MARVEL API</h1>
+        <section>
+            <input type="search" id="nameInput" placeholder="Example: Captain America">
+        </section>
+
+        <section id="imagenes">
+        </section>
+    </main>
+
+    <div id="info" class="dp_none">
+        <header>
+            <button id="backBtn"> <- Back</button>
+            <h1 id="name"></h1>
+        </header>
+        <section>
+            <img src="" alt="" id="characterImg">
+            <div>
+                <p id="description"></p>
+                <h3>Comics</h3>
+                <ul></ul>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
